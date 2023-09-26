@@ -3,6 +3,10 @@ import axios from 'axios';
 
 import searchIcon from './assets/icons-search.png';
 import weatherIcon from './assets/2682849_cloud_cloudy_day_forecast_sun_icon.png';
+import feelsIcon from './assets/thermometer.png';
+import airIcon from './assets/blur.png';
+import humidityIcon from './assets/humidity.png';
+import windIcon from './assets/wind.png';
 
 function App() {
 
@@ -35,8 +39,8 @@ function App() {
           <div className="feels">Feels Like
             <p>94ºF</p>
           </div>
-          <div className="visibility">Visibility
-            <p>18 mi</p>
+          <div className="air-quality">Air Quality
+            <p>28</p><p id='aq-status'>Good</p>
           </div>
           <div className="humidity">Humidity
             <p>59%</p>
@@ -44,6 +48,12 @@ function App() {
           <div className="wind">Wind Speed
             <p>9 mph</p>
           </div>
+        </div>
+        <div className="details-icons">
+          <img src={feelsIcon} alt=""/>
+          <img src={airIcon} alt=""/>
+          <img src={humidityIcon} alt=""/>
+          <img src={windIcon} alt=""/>
         </div>
       </div>
     </div>
