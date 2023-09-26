@@ -9,8 +9,13 @@ function App() {
     <div className="app">
       <div className="container">
         <div className="search-bar">
+          <input type="text" placeholder="Enter location" />
+          <div className="search-icon">
+          </div>
+        </div>
+        <div className="weather-info">
           <div className="temp">
-            <h1>88ºF</h1>
+            <p>88ºF</p>
           </div>
           <div className="location">
             <p>Dallas</p>
@@ -18,19 +23,19 @@ function App() {
           <div className="description">
             <p>Clouds</p>
           </div>
-          <div className="details">
-            <div className="feels">
-              <p>94ºF</p>
-            </div>
-            <div className="visibility">
-              <p>18 mi</p>
-            </div>
-            <div className="humidity">
-              <p>59%</p>
-            </div>
-            <div className="wind">
-              <p>9 mph</p>
-            </div>
+        </div>
+        <div className="weather-details">
+          <div className="feels">Feels Like
+            <p>94ºF</p>
+          </div>
+          <div className="visibility">Visibility
+            <p>18 mi</p>
+          </div>
+          <div className="humidity">Humidity
+            <p>59%</p>
+          </div>
+          <div className="wind">Wind Speed
+            <p>9 mph</p>
           </div>
         </div>
       </div>
