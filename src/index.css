@@ -144,18 +144,12 @@ body {
 }
 
 .details-icons {
-  width: 255px;
-  height: 200px;
+  width: 18px;
+  height: 18px;
   display: grid;
   grid: 1px / auto auto;
-  gap: 4.2rem 0;
-  position: fixed;
-  margin-top: 26rem;
-  margin-right: -2rem;
-}
-
-.details-icons img{
-  width: 17px;
-  height: 17px;
+  position: absolute;
   filter: invert();
+  margin-left: -1.4rem;
+  margin-top: -1px;
 }

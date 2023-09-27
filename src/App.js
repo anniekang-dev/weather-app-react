@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
-import searchIcon from './assets/icons-search.png';
+// import searchIcon from './assets/icons-search.png';
 import weatherIcon from './assets/2682849_cloud_cloudy_day_forecast_sun_icon.png';
 import feelsIcon from './assets/thermometer.png';
 import airIcon from './assets/blur.png';
@@ -13,20 +13,16 @@ export default function App() {
   const [ location, setLocation ] = useState('')
 
   const API_KEY = 'dc3e1bfc785b02ec2d95cb7236385598';
-  const url =`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
+  const url =`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${API_KEY}`;
 
   const searchLocation = async (e) => {
     if(e.key === 'Enter') {
-       {
-        const data = await axios({
-          method: 'get',
-          url: url
-        })
-        console.log(data);
+        axios.get(url).then((response) => {
+        setData(response.data)
+      })
+      setLocation('')
       }
     }
-  }
-
 
   return (
     <div className="app">
@@ -42,35 +38,32 @@ export default function App() {
             <img src={weatherIcon} alt=""/>
           </div>
           <div className="temp">
-            <p>88</p><p id='degree'>ºF</p>
+            {data.main ? <p>{data.main.temp.toFixed()}</p> : null}<p id='degree'>ºF</p>
           </div>
           <div className="location">
             <p>{data.name}</p>
           </div>
           <div className="description">
-            <p>Clouds</p>
+            {data.weather ? <p>{data.weather[0].main}</p> : null}
           </div>
         </div>
+
+      {data.name != undefined &&
         <div className="weather-details">
-          <div className="feels">Feels Like
-            <p>94ºF</p>
+          <div className="feels"><img className="details-icons" src={feelsIcon} alt=""/>Feels Like
+            {data.main ? <p>{data.main.feels_like.toFixed()}ºF</p> : null}
           </div>
-          <div className="air-quality">Air Quality
-            <p>28</p><p id='aq-status'>Good</p>
+          <div className="visibility"><img className="details-icons" src={airIcon} alt=""/>Visibility
+            <p>{data.visibility} mi</p>
           </div>
-          <div className="humidity">Humidity
-            <p>59%</p>
+          <div className="humidity"><img className="details-icons" src={humidityIcon} alt=""/>Humidity
+            {data.main ? <p>{data.main.humidity}%</p> : null}
           </div>
-          <div className="wind">Wind Speed
-            <p>9 mph</p>
+          <div className="wind"><img className="details-icons" src={windIcon} alt=""/>Wind Speed
+            {data.wind ? <p>{data.wind.speed.toFixed()} mph</p> : null}
           </div>
         </div>
-        <div className="details-icons">
-          <img src={feelsIcon} alt=""/>
-          <img src={airIcon} alt=""/>
-          <img src={humidityIcon} alt=""/>
-          <img src={windIcon} alt=""/>
-        </div>
+      }
       </div>
     </div>
   );
