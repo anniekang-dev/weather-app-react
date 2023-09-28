@@ -52,23 +52,22 @@ body {
   outline: none;
 }
 
-.search-icon {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-
-.search-icon img {
-  width: 22px;
+.search-icon button{
+  width: 30px;
+  height: 30px;
   position: absolute;
-  transform: translate(15.9rem, -37px);
-  filter: invert(40%);
+  transform: translate(15.5rem, -40px);
+  filter: invert(45%);
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
 }
 
 .weather-info {
   height: 200px;
   justify-content: center;
-  margin-top: 4.2rem;
+  margin-top: 4.5rem;
 }
 
 .icon {
@@ -87,17 +86,17 @@ body {
   font-size: 93px;
   font-weight: 400;
   letter-spacing: -5px;
-  margin-top: -5px;
+  margin-top: -9px;
   display: flex;
   justify-content: center;
 }
 
 #degree {
-  font-size: 32px;
+  font-size: 31px;
   letter-spacing: 0;
   margin-top: 8px;
   margin-left: 6px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .location {
@@ -120,7 +119,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 300;
   gap: 0.7rem;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import searchIcon from './assets/icons-search.png';
+import { FiSearch } from "react-icons/fi";
 import weatherIcon from './assets/2682849_cloud_cloudy_day_forecast_sun_icon.png';
 import feelsIcon from './assets/thermometer.png';
 import humidityIcon from './assets/humidity.png';
@@ -21,17 +21,23 @@ export default function App() {
       })
       setLocation('')
       }
-    }
+  }
 
-    
+  const searchIcon = async (e) => {
+    if(e.onClick === undefined) {
+      axios.get(url).then((response) => {
+        setData(response.data)
+      })
+    }
+  }
 
   return (
     <div className="app">
       <div className="container">
         <div className="search-bar">
-          <input type="text" value={location} onChange={event => setLocation(event.target.value)} onKeyDown={searchLocation}placeholder="Enter location" />
+          <input type="text" value={location} onChange={event => setLocation(event.target.value)} onKeyDown={searchLocation} placeholder="Enter location" />
           <div className="search-icon">
-            <img src={searchIcon} alt=""/>
+            <button value={location} onChange={event => searchIcon(event.target.value)} onClick={searchIcon}><FiSearch /></button>
           </div>
         </div>
         <div className="weather-info">
