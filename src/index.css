@@ -68,7 +68,7 @@ body {
 .weather-info {
   height: 200px;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 5.2rem;
 }
 
 .icon {
@@ -87,7 +87,7 @@ body {
   font-size: 90px;
   font-weight: 400;
   letter-spacing: -5px;
-  margin-top: -8px;
+  margin-top: -6px;
   display: flex;
   justify-content: center;
 }
@@ -111,7 +111,7 @@ body {
 .description {
   display: flex;
   justify-content: center;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 200;
   margin-top: 8px;
 }
@@ -122,18 +122,19 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
   gap: 2.2rem;
   text-align: left;
-  margin-top: 28rem;
+  margin-top: 28.5rem;
   margin-left: 1rem;
 }
 
 .weather-details p {
   margin-top: 5px;
-  font-size: 21px;
-  font-weight: 400;
+  font-size: 22.5px;
+  letter-spacing: -0.7px;
+  font-weight: 300;
 }
 
 .details-icons {
