@@ -1,10 +1,10 @@
 ## weather-app-react
 
 <div align="center">
-<img width="1076" alt="Screenshot 2023-09-28 at 9 55 12 AM" src="https://github.com/anniekang-dev/weather-app-react/assets/137893369/13fd75e0-9a78-49f7-9e2d-195094c447a5">
+<img width="896" alt="Screenshot 2023-09-28 at 10 27 32 AM" src="https://github.com/anniekang-dev/weather-app-react/assets/137893369/a76949fb-849f-4b20-a0eb-659d64893630">
   
 ### To-do
-서치 아이콘에 온클릭 이벤트 추가하기
+✅<del>서치 아이콘에 온클릭 이벤트 추가하기</del>
 
 날씨 상황별로 아이콘 변경 시켜주기
 
