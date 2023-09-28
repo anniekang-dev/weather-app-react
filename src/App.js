@@ -4,7 +4,6 @@ import axios from 'axios';
 import searchIcon from './assets/icons-search.png';
 import weatherIcon from './assets/2682849_cloud_cloudy_day_forecast_sun_icon.png';
 import feelsIcon from './assets/thermometer.png';
-import updownIcon from './assets/up-and-down-arrows.png';
 import humidityIcon from './assets/humidity.png';
 import windIcon from './assets/wind.png';
 
