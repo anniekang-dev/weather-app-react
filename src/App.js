@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-// import searchIcon from './assets/icons-search.png';
+import searchIcon from './assets/icons-search.png';
 import weatherIcon from './assets/2682849_cloud_cloudy_day_forecast_sun_icon.png';
 import feelsIcon from './assets/thermometer.png';
-import airIcon from './assets/blur.png';
+import updownIcon from './assets/up-and-down-arrows.png';
 import humidityIcon from './assets/humidity.png';
 import windIcon from './assets/wind.png';
 
@@ -30,7 +30,7 @@ export default function App() {
         <div className="search-bar">
           <input type="text" value={location} onChange={event => setLocation(event.target.value)} onKeyDown={searchLocation}placeholder="Enter location" />
           <div className="search-icon">
-            {/* <img src={searchIcon} alt=""/> */}
+            <img src={searchIcon} alt=""/>
           </div>
         </div>
         <div className="weather-info">
@@ -52,9 +52,6 @@ export default function App() {
         <div className="weather-details">
           <div className="feels"><img className="details-icons" src={feelsIcon} alt=""/>Feels Like
             {data.main ? <p>{data.main.feels_like.toFixed()}ºF</p> : null}
-          </div>
-          <div className="visibility"><img className="details-icons" src={airIcon} alt=""/>Visibility
-            <p>{data.visibility} mi</p>
           </div>
           <div className="humidity"><img className="details-icons" src={humidityIcon} alt=""/>Humidity
             {data.main ? <p>{data.main.humidity}%</p> : null}
