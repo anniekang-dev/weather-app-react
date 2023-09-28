@@ -47,6 +47,14 @@ export default function App() {
           <div className="description">
             {data.weather ? <p>{data.weather[0].main}</p> : null}
           </div>
+          <div className="high-low">
+            <div className='high'>
+            {data.main ? <p>H:{data.main.temp_max.toFixed()}º</p> : null}
+            </div>
+            <div className='low'>
+            {data.main ? <p>L:{data.main.temp_min.toFixed()}º</p> : null}
+            </div>
+          </div>
         </div>
 
       {data.name != undefined &&

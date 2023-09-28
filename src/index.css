@@ -68,7 +68,7 @@ body {
 .weather-info {
   height: 200px;
   justify-content: center;
-  margin-top: 5.2rem;
+  margin-top: 4.2rem;
 }
 
 .icon {
@@ -84,20 +84,20 @@ body {
 .temp {
   display: flex;
   margin-left: 15px;
-  font-size: 90px;
+  font-size: 93px;
   font-weight: 400;
   letter-spacing: -5px;
-  margin-top: -6px;
+  margin-top: -5px;
   display: flex;
   justify-content: center;
 }
 
 #degree {
-  font-size: 30px;
+  font-size: 32px;
   letter-spacing: 0;
   margin-top: 8px;
   margin-left: 6px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .location {
@@ -105,7 +105,7 @@ body {
   justify-content: center;
   font-size: 29px;
   font-weight: 300;
-  margin-top: -5px;
+  margin-top: -2px;
 }
 
 .description {
@@ -113,7 +113,16 @@ body {
   justify-content: center;
   font-size: 21px;
   font-weight: 200;
-  margin-top: 8px;
+  margin-top: 5px;
+}
+
+.high-low {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 300;
+  gap: 0.7rem;
 }
 
 .weather-details {
@@ -126,14 +135,14 @@ body {
   font-weight: 300;
   gap: 2.2rem;
   text-align: left;
-  margin-top: 28.5rem;
+  margin-top: 29.5rem;
   margin-left: 1rem;
 }
 
 .weather-details p {
   margin-top: 5px;
   font-size: 22.5px;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.2px;
   font-weight: 300;
 }
 
