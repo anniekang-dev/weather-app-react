@@ -1,7 +1,7 @@
 ## weather-app-react
 
 <div align="center">
-<img width="896" alt="Screenshot 2023-09-28 at 10 25 40 AM" src="https://github.com/anniekang-dev/weather-app-react/assets/137893369/3232d651-ca3e-42a6-89d2-4f981af0f9de">
+<img width="896" alt="Screenshot 2023-09-28 at 10 27 32 AM" src="https://github.com/anniekang-dev/weather-app-react/assets/137893369/2d66d669-a1c0-4d9c-a546-c867c207214f">
   
 ### To-do
 서치 아이콘에 온클릭 이벤트 추가하기
